@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://url-to-qr-a65.pages.dev/sitemap.xml
