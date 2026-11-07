@@ -17,6 +17,6 @@ function seoPlugin(site) {
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
-  const site = (process.env.SITE_URL || env.SITE_URL || 'https://url-to-qr.pages.dev').replace(/\/+$/, '')
+  const site = (process.env.SITE_URL || env.SITE_URL || 'https://url-to-qr-a65.pages.dev').replace(/\/+$/, '')
   return { plugins: [react(), seoPlugin(site)] }
 })
