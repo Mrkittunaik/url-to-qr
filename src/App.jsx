@@ -43,7 +43,7 @@ export default function App() {
 
   return (<>
     <header className="header"><div className="wrap row between">
-      <a className="brand" href="/" style={{ textDecoration: 'none', color: 'inherit' }}><img src="/favicon.svg" alt="QR Generator logo" width="24" height="24" /> QR Generator</a>
+      <a className="brand" href="/" style={{ textDecoration: 'none', color: 'inherit' }}><QrCode size={24} color="#000" strokeWidth={2.2} aria-label="QR Generator logo" /> QR Generator</a>
       <nav className="nav"><a href="#generator">QR Generator</a><a href="#how">How It Works</a><a href="#faq">FAQ</a></nav>
     </div></header>
 
@@ -161,6 +161,6 @@ export default function App() {
           ['Can I add my logo?', 'Yes. Upload a PNG, JPG or WebP. Keep it small so the code stays scannable.']]
           .map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
     </main>
-    <footer className="footer"><div className="wrap row between"><div className="brand"><img src="/favicon.svg" alt="" width="20" height="20" /> QR Generator</div><span>© {new Date().getFullYear()} QR Generator. Runs entirely in your browser.</span></div></footer>
+    <footer className="footer"><div className="wrap row between"><div className="brand"><QrCode size={20} color="#000" strokeWidth={2.2} aria-hidden="true" /> QR Generator</div><span>© {new Date().getFullYear()} QR Generator. Runs entirely in your browser.</span></div></footer>
   </>)
 }
